@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:'Kumbh Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: solid 1px hsl(220, 14%, 75%);
+    color: hsl(219, 9%, 45%);
+    font-size: 15px;
+}
+
+.perfil {
+    height: 45px;
+}
+
+.logo {
+    height: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul li {
+    margin-top: 3px;
+}
+
+.cart {
+    display: flex;
+    gap: 50px;
+}
+
+.logo-cart {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
