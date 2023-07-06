@@ -11,11 +11,11 @@
 header {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 1100px;
     margin: auto;
     margin-top: 20px;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     border-bottom: solid 1px hsl(220, 14%, 75%);
     color: hsl(219, 9%, 45%);
     font-size: 15px;
@@ -23,6 +23,13 @@ header {
 
 .perfil {
     height: 45px;
+    cursor: pointer;
+}
+
+.perfil:hover {
+    border-radius: 50px;
+    outline: solid 2px hsl(26, 100%, 55%);
+    transition: 0.1s;
 }
 
 .logo {
@@ -32,10 +39,20 @@ header {
 ul {
     display: flex;
     gap: 40px;
+    height: 25px;
+    margin-top: 5px;
 }
 
 ul li {
     margin-top: 3px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: black;
+    border-bottom: solid 2px hsl(26, 100%, 55%);
+    transition: 0.1s;
+    transition-delay: 0.1s;
 }
 
 .cart {
@@ -43,22 +60,29 @@ ul li {
     gap: 50px;
 }
 
+.logo-cart:hover {
+    
+filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(300deg) brightness(70%) contrast(1000%);
+}
+
 .logo-cart {
     width: 20px;
     height: 20px;
     align-self: center;
+    cursor: pointer;
 }
 
 .img-principal {
-    width: 420px;
+    width: 410px;
+    height: 390px;
     border-radius: 13px;
 }
 
 .mini-img img {
-    width: 90px;
-    border-radius: 13px;
-    margin-left: 16px;
-    margin-top: 25px;
+    width: 85px;
+    border-radius: 11px;
+    margin-left: 18px;
+    margin-top: 22px;
 }
 
 .mini-img img:first-child {
@@ -67,11 +91,13 @@ ul li {
 
 main {
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
     word-wrap: break-word;
     width: 70%;
     margin: auto;
     margin-top: 60px;
+    margin-left: 260px;
+    letter-spacing: 1px;
 }
 
 .container-description {
@@ -83,12 +109,14 @@ main {
 }
 
 .container-description h1 {
-    font-size: 14px;
+    font-size: 13px;
     color: hsl(26, 100%, 55%);
 }
 
 .container-description h2 {
     font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
 }
 
 .sobre {
@@ -164,3 +192,35 @@ button:hover, .ordem img:hover, .mini-img img:hover  {
     opacity: 0.6;
 }
 
+aside {
+    position: absolute;
+    border: solid 1px black;
+    background: white;
+    left: 1020px;
+    top: 75px;
+    width: 335px;
+    height: 225px;
+}
+
+aside h1 {
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    border-bottom: solid 1px black;
+    padding-bottom: 20px;
+}
+
+aside h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.produtos {
+    display: none;
+
+}
+.img-cart {
+    width: 13%;
+    border-radius: 4px;
+}
