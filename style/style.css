@@ -193,33 +193,60 @@ button:hover, .ordem img:hover, .mini-img img:hover  {
 }
 
 aside {
+    display: none;
     position: absolute;
-    border: solid 1px black;
     background: white;
     left: 1020px;
     top: 75px;
-    width: 335px;
+    width: 340px;
     height: 225px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 aside h1 {
     font-size: 15px;
     color: black;
     margin-top: 10px;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px hsl(220, 14%, 75%);
     padding-bottom: 20px;
+    text-align: center;
 }
 
 aside h2 {
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     margin-top: 80px;
-}
-
-.produtos {
     display: none;
-
 }
+
+.aparecer {
+     display: block;
+}
+
+.produtos img {
+    margin-left: 10px;
+}
+
+.lixo {
+    width: 4%;
+    height: 3vh;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.produtos-inline {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.produtos button {
+    margin-top: 25px;
+    margin-left: 18px;
+    width: 300px;
+}
+
 .img-cart {
     width: 13%;
     border-radius: 4px;
