@@ -72,6 +72,11 @@ filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(300deg) brightness(70%) con
     cursor: pointer;
 }
 
+.total {
+    font-weight: bold;
+    color: black;
+}
+
 .img-principal {
     width: 410px;
     height: 390px;
@@ -83,6 +88,11 @@ filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(300deg) brightness(70%) con
     border-radius: 11px;
     margin-left: 18px;
     margin-top: 22px;
+}
+
+.mini-img img.selecionada {
+    opacity: 0.4;
+    outline: solid 3px hsl(26, 95%, 38%);
 }
 
 .mini-img img:first-child {
@@ -185,6 +195,10 @@ button {
     border: none;
     color: white;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 button:hover, .ordem img:hover, .mini-img img:hover  {
@@ -216,8 +230,7 @@ aside h1 {
 aside h2 {
     font-size: 14px;
     text-align: center;
-    margin-top: 80px;
-    display: none;
+    margin-top: 80px;  
 }
 
 .aparecer {
@@ -226,6 +239,10 @@ aside h2 {
 
 .produtos img {
     margin-left: 10px;
+}
+
+.produtos {
+    display: none;
 }
 
 .lixo {
