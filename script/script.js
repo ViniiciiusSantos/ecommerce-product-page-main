@@ -10,6 +10,9 @@ const vezes = document.querySelector('.vezes');
 const total = document.querySelector('.total');
 const compra = document.querySelector('.compra');
 const lixo = document.querySelector('.lixo');
+const fechar = document.querySelector('.close');
+const modalJanela = document.querySelector('.modal-janela');
+const imgContainer = document.querySelector('#img-abrirmodal');
 
 let adicional = 0;
 
@@ -58,5 +61,12 @@ window.addEventListener('load', function() {
     });
 });
 
+imgContainer.addEventListener('click', () => {
+   modalJanela.style.display = 'flex'
+})
+
+fechar.addEventListener('click', () => {
+    modalJanela.style.display = 'none';
+})
 
 cartLogo.addEventListener('click', miniMenu)
