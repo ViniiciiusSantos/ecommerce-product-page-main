@@ -13,25 +13,31 @@ const lixo = document.querySelector('.lixo');
 const fechar = document.querySelector('.close');
 const modalJanela = document.querySelector('.modal-janela');
 const imgContainer = document.querySelector('#img-modal');
+const spanIn = document.querySelector('.spanIn');
 
 let adicional = 0;
 
 mais.addEventListener('click', () => {
     adicional++;
     numero.textContent = adicional;
-    
+    spanIn.textContent = adicional;  
 })
 
 menos.addEventListener('click', () => {
     adicional--;
     numero.textContent = adicional;
+    spanIn.textContent = adicional;
 })
 
 buttonAdd.addEventListener('click', () => {
     if (adicional >= 1) {
         vazio.style.display = 'none';
         produtos.style.display = 'block';
+        spanIn.style.display = 'block';
+    } else {
+        spanIn.style.display ='none'
     }
+
     let vezes = adicional;
     let total = adicional * 125.00.toFixed(2);
     compra.innerHTML = "$125.00" + " x " + vezes + " <span class='total'>" + "$" + total + "</span>";
@@ -40,6 +46,7 @@ buttonAdd.addEventListener('click', () => {
 lixo.addEventListener('click', () => {
     produtos.style.display = 'none';
     vazio.style.display = 'block';
+    spanIn.style.display = 'none';
 })
 
 function miniMenu() {

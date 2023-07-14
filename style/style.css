@@ -19,6 +19,9 @@ header {
     border-bottom: solid 1px hsl(220, 14%, 75%);
     color: hsl(219, 9%, 45%);
     font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 220px;
 }
 
 .perfil {
@@ -65,40 +68,27 @@ ul li:hover {
 filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(300deg) brightness(70%) contrast(1000%);
 }
 
+.spanIn { 
+    display: none;
+    position: absolute;
+    z-index: 999;
+    font-size: 9px;
+    top: 9px;
+    right: 90px;
+    font-weight: 700;
+    width: 17px;
+    height: 11px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+}
+
 .logo-cart {
     width: 20px;
     height: 20px;
     align-self: center;
     cursor: pointer;
-}
-
-.modal-janela {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.452);
-    z-index: 1;
-    display: flex;
-    justify-content:space-evenly;
-    display: none;
-}
-
-.modal {
-    width: 520px;
-    margin-top: 110px;
-    position: relative;
-}
-
-.modal .mini-img {
-    margin-left: 60px;
-}
-
-#img-principal{
-    width: 520px;
-    height: 470px;
-    border-radius: 13px;
 }
 
 .close {
@@ -146,28 +136,17 @@ filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(300deg) brightness(70%) con
     border-radius: 13px;
 }
 
-#mini-img img {
-    width: 85px;
-    border-radius: 11px;
-    margin-left: 35px;
-    margin-top: 22px;
-    cursor: pointer;
-}
-
-#mini-img img:hover {
-    opacity: 0.6;
+.mini-img {
+    display: flex;
 }
 
 .mini-img img {
     width: 85px;
     border-radius: 11px;
-    margin-left: 18px;
+    margin-left: 23px;
     margin-top: 22px;
-}
-
-#mini-img img.selecio {
-    opacity: 0.4;
-    outline: solid 3px hsl(26, 95%, 38%);
+    flex-wrap: nowrap;
+    
 }
 
 .mini-img img.selecionada {
@@ -185,7 +164,7 @@ main {
     word-wrap: break-word;
     width: 70%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 150px;
     margin-left: 260px;
     letter-spacing: 1px;
 }
@@ -283,7 +262,7 @@ button:hover, .ordem img:hover, .mini-img img:hover  {
 
 aside {
     display: none;
-    position: absolute;
+    position: fixed;
     background: white;
     left: 1020px;
     top: 75px;
@@ -338,4 +317,50 @@ aside h2 {
 .img-cart {
     width: 13%;
     border-radius: 4px;
+}
+
+.modal-janela {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+    z-index: 1;
+    display: flex;
+    justify-content:space-evenly;
+    display: none;
+}
+
+.modal {
+    width: 520px;
+    margin-top: 110px;
+    position: relative;
+}
+
+.modal .mini-img {
+    margin-left: 60px;
+}
+
+#mini-img img {
+    width: 85px;
+    border-radius: 11px;
+    margin-left: 35px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+#mini-img img:hover {
+    opacity: 0.6;
+}
+
+#img-principal{
+    width: 520px;
+    height: 470px;
+    border-radius: 13px;
+}
+
+#mini-img img.selecio {
+    opacity: 0.4;
+    outline: solid 3px hsl(26, 95%, 38%);
 }
